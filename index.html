@@ -12,14 +12,14 @@
 
     <body>
         <!-- Navegação -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-warning">
           <div class="container-fluid topnav">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-dark">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#home">EsCoLA</a>
                 </li>
@@ -27,14 +27,13 @@
                   <a class="nav-link" href="#objetivos">Objetivos</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#aprendizagem-cooperativa" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Aprendizagem Cooperativa
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#timeline-ac">História</a></li>
+                    <li><a class="dropdown-item" href="#">PRECE</a></li>
+                    <li><a class="dropdown-item" href="#">PACCE</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -47,12 +46,12 @@
                   <a class="nav-link" href="#">Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Site do PACCE</a>
+                  <a class="nav-link" href="http://www.pacce.ufc.br/pacce/">Site do PACCE</a>
                 </li>
               </ul>
             </div>
             <div class="button-container">
-                <a href="#" class="btn btn-primary crie-celula">Crie sua célula!</a>
+                <a href="#" class="btn btn-dark crie-celula">Crie sua célula!</a>
             </div>
           </div>
         </nav>
@@ -62,41 +61,60 @@
             <div class="row g-0">
                 <div class="col-12">
                     <div id="home">
-                        <div class="col-sm-6 apresentacao">
+                        <!--carrossel-->
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style='position:relative'>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="img/1.jpg" style='height: 790px;' alt="Primeiro Slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/2.jpg" style='height: 790px;' alt="Segundo Slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="img/3.jpg" style='height: 790px;' alt="Terceiro Slide">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6 apresentacao border-0 text-white" style='position:absolute; background-color:black;'>
                             <h1>EsCoLA</h1>
+                            <p class="text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat leo turpis, sit amet sollicitudin quam laoreet a. Praesent malesuada sem vitae laoreet pretium. Quisque massa justo, 
-                            Integer dictum ante nec leo ultricies viverra. Nam arcu turpis, porttitor vitae sapien quis, dictum eleifend nisi. Sed vel orci nec lacus sodales aliquet et a magna. Fusce nec blandit purus. Donec non fringilla ex. Nam eu risus condimentum, eleifend urna nec, ultrices enim. Aliquam tellus diam, ultrices nec va    
+                            Integer dictum ante nec leo ultricies viverra. Nam arcu turpis, porttitor vitae sapien quis, dictum eleifend nisi. Sed vel orci nec lacus sodales aliquet et a magna. Fusce nec blandit purus. Donec non fringilla ex. Nam eu risus condimentum, eleifend urna nec, ultrices enim. Aliquam tellus diam, ultrices nec va 
+                            </p> 
                         </div>
                     </div>
                 </div>
+
+                <!-- objetivos -->
                 <div class="objetivos" align="center" id="objetivos">
                     <h2 class="objetivo-title">Objetivos</h2>
                     <div class="row g-0">
-                        <div class="col-sm-6 mx-auto objetivo-item">
+                        <div class="col-sm-5 mx-auto objetivo-item border-0">
                             <img src="img/in-love.svg" class="objetivo-img">
                             <div class="objetivo-desc">
                                 Estimular o uso de habilidades socioemocionais por parte dos usuários através de conteúdos sobre os pilares da Aprendizagem Cooperativa
                             </div>
                         </div>
-                        <div class="col-sm-6 mx-auto objetivo-item">
+                        <div class="col-sm-5 mx-auto objetivo-item border-0">
                             <img src="img/teamwork.svg" class="objetivo-img">
                             <div class="objetivo-desc">
                                 Apresentar a relevância das temáticas na formação pessoal e das possibilidades do ambiente cooperativo
                             </div>
                         </div>
-                        <div class="col-sm-6 mx-auto objetivo-item">
+                        <div class="col-sm-5 mx-auto objetivo-item border-0">
                             <img src="img/videoconference.svg" class="objetivo-img">
                             <div class="objetivo-desc">
                                 Melhorar a forma veem-se o ambiente de ensino remoto com o estímulo ao uso de métodos mais cooperativos
                             </div>
                         </div>
-                        <div class="col-sm-6 mx-auto objetivo-item">
+                        <div class="col-sm-5 mx-auto objetivo-item border-0">
                             <img src="img/motivation.svg" class="objetivo-img">
                             <div class="objetivo-desc">
                                 Incentivar o encorajamento mútuo no enfrentamento de dificuldades ligadas ao aprendizado
                             </div>
                         </div>
-                        <div class="col-sm-6 mx-auto objetivo-item">
+                        <div class="col-sm-5 mx-auto objetivo-item border-0">
                             <img src="img/lamp.svg" class="objetivo-img">
                             <div class="objetivo-desc">
                                 Estimular o desenvolvimento da autonomia intelectual
@@ -105,51 +123,100 @@
                     </div>
                 </div>
 
-                <div id="aprendizagem-cooperativa" align="center">
+                <div id="aprendizagem-cooperativa" class="justify-content-center">
                     <div class="row g-0">
-                        <h2 class="titulo">O que é a Aprendizagem Cooperativa?</h2>
-                        <p class="col-sm-6 mx-auto ac-desc">
+                        <h2 class="titulo ac-desc">O que é a Aprendizagem Cooperativa?</h2>
+                        <p class="col-sm-6 ac-desc text-justify">
                             A cooperação consiste em trabalhar juntos para alcançar objetivos comuns. Em uma situação cooperativa, os indivíduos buscam obter resultados que são benéficos para si e para todos os outros membros do grupo. A Aprendizagem Cooperativa é o uso didático de pequenos grupos em que os alunos trabalham juntos para maximizar a sua própria aprendizagem e a dos outros. A metodologia da Aprendizagem Cooperativa possui sua estrutura no desenvolvimento do trabalho em equipe realizado pelos aprendizes para alcançar objetivos comuns. Geralmente o trabalho é desenvolvido a partir da divisão de tarefas, etapa em que cada integrante é responsável por uma parte das atividades propostas para resolver um problema, contudo, todos trabalham juntos e são responsáveis pela aprendizagem de todos. Nesta abordagem, o professor tem a função de mediar a aprendizagem, organizar atividades, realizar intervenções a partir das observações e distribuir tarefas.
                         </p>
+                        <img src="img/item ac.png" class="d-block col-sm-5 ac-desc" style='width:40% margin-left:25%;'>
                     </div>
                 </div>
 
-                <div class="timeline-ac">
+                <div class="timeline-ac" id="timeline-ac">
                     <div class="row g-0">
                     <div class="col-sm-6 mx-auto">
                         
                         <!-- Timeline -->
                         <ul class="timeline">
-                            <li class="timeline-item bg-white rounded ml-3 p-4">
+                            <li class="timeline-item bg-white rounded ml-3 p-4" style="margin-left: 2%;">
                                 <div class="timeline-arrow"></div>
-                                <h2 class="h5 mb-0">Title of section 1</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
+                                <h2 class="h5 mb-0">Title of section 1</h2>
+                                <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
                                 <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                             </li>
-                            <li class="timeline-item bg-white rounded ml-3 p-4">
+                            <li class="timeline-item bg-white rounded ml-3 p-4" style="margin-left: 2%;">
                                 <div class="timeline-arrow"></div>
-                                <h2 class="h5 mb-0">Title of section 2</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>5 April, 2019</span>
+                                <h2 class="h5 mb-0">Title of section 2</h2>
+                                <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>5 April, 2019</span>
                                 <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper.</p>
                                 <p class="text-small mt-2 font-weight-light">Libero expedita explicabo eius fugiat quia aspernatur autem laudantium error architecto recusandae natus sapiente sit nam eaque, consectetur porro molestiae ipsam! Deleniti.</p>
                             </li>
-                            <li class="timeline-item bg-white rounded ml-3 p-4">
+                            <li class="timeline-item bg-white rounded ml-3 p-4" style="margin-left: 2%;">
                                 <div class="timeline-arrow"></div>
-                                <h2 class="h5 mb-0">Title of section 3</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>18 August, 2019</span>
+                                <h2 class="h5 mb-0">Title of section 3</h2>
+                                <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>18 August, 2019</span>
                                 <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                             </li>
-                            <li class="timeline-item bg-white rounded ml-3 p-4">
+                            <li class="timeline-item bg-white rounded ml-3 p-4" style="margin-left: 2%;">
                                 <div class="timeline-arrow"></div>
-                                <h2 class="h5 mb-0">Title of section 4</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+                                <h2 class="h5 mb-0">Title of section 4</h2>
+                                <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
                                 <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                                 <p class="text-small mt-2 font-weight-light">Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit doloremque, laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
                             </li>
-                        </ul><!-- End -->
-
+                        </ul>
                     </div>
                 </div>
                 </div>
-                
-            </div>
 
+                <!-- apresentação das células-->
+                <div class="Celulas mt-5">
+                      <div class="row justify-content-center">
+                          <div class="col-sm-5">
+                            <div class="card">
+                                <img class="card-img-top" src="img/3.jpg" alt="Imagem de capa do card">
+                              <div class="card-body">
+                                <h5 class="card-title">Célula Um</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-5" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/3.jpg" alt="Imagem de capa do card">
+                              <div class="card-body">
+                                <h5 class="card-title">Célula Dois</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row button col-sm-3 mt-3" align="center"><a href="#" class="btn btn-outline-warning">Conhecer Mais células</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End -->
+                <div class="Contato mt-5 bg-warning">
+                    <div class="row g-0" style="margin-left: 10%;">
+                        <div class="col-sm-2 mt-4">
+                            <p>Redes socias do Pacce
+                            <br><img src="img/Instagram.svg"> @Instagram
+                            <br><img src="img/Facebook.svg"> @Facebook
+                            </p>
+                            
+                        </div>
+                        <div class="col-sm-3 mt-4">
+                            <p>Contato
+                            <br><img src="img/telephone-fill.svg"> Imagina.um.email.aqui@gmail.com
+                            <br><img src="img/envelope-fill.svg"> (um) whats-app
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </body>
 </html>
